@@ -42,4 +42,6 @@ function maskify(cc) {
 
 maskify = (cc) => '#'.repeat(Math.max(0, cc.length - 4)) + cc.substr(-4);
 
+const maskify = cc => cc.slice(-4).padStart(cc.length, '#')
+
 ```
