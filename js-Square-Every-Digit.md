@@ -10,11 +10,12 @@ Note: The function accepts an integer and returns an integer
 
 ```js
 function squareDigits(num){
-  let str = (num + "").split('');
-  let numero = [];
-  for (i of str) numero.push(i*i)
-  return +numero.join("")
+return +(num + "").split('').map(e => e * e).join("");
 }
+
+//another one:
+
+squareDigits = n => Number(n.toString().split('').map(n => n**2).join().replaceAll(',', ''));
 
 
 ```
