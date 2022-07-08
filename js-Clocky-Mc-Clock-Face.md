@@ -62,14 +62,8 @@ function checkingLengthMinutes(total) {
 var whatTimeIsIt = function(angle) {
   let subtotal = ""
   let total = ""
-  if (angle === 0 || angle === 360) {
-    return "12:00"
-  } else {
-   subtotal = Math.trunc(angle * 2 / 60).toString() +":"+((angle * 2) % 60).toString()
-  }
+  subtotal = Math.trunc(angle / 30).toString() +":"+((angle * 2) % 60).toString()
   total = subtotal.split(":");
-  total = checkingLengthHours(total[0]) +":" +checkingLengthMinutes(total[1]).slice(0,2);
-  return total
+  return checkingLengthHours(total[0]) +":" +checkingLengthMinutes(total[1]).slice(0,2)
 }
-
 ```
