@@ -24,6 +24,10 @@ My solution:
 
 ```js
 function maskify(cc) {
+  return "#".repeat(cc.slice(0,-4).length) + cc.slice(-4)
+}
+
+function maskify(cc) {
     const str = cc + '';
     const last = str.slice(-4);
     return last.padStart(str.length, '#')
