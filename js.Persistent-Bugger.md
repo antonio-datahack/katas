@@ -33,4 +33,16 @@ function persistence(num) {
       return counter 
    }
  }
+ 
+ ///////////////////////////////////////////////////////
+ 
+ function persistence(num) {
+   let counter = 0;
+  while(num.toString().length > 1){
+    counter++
+    num = num.toString().split("").map(Number).reduce((a, b) => a*b)
+  }
+  return counter
+}
  ```
+ 
