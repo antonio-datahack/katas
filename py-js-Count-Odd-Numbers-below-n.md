@@ -6,17 +6,22 @@ Examples (Input -> Output)
 
 Expect large Inputs!
 
-
-
-
 ```py
 def odd_count(n):
     odds = [i for i in range(n) if i % 2 != 0 ]
     return len(odds)
 
-
 def odd_count(n):
     odds = [num for num in range(1, n , 2)]
     return len(odds)
+
+def odd_count(n):
+    return n//2
     
+```
+
+```js
+function oddCount(n){
+  return Math.floor(n/2)
+}
 ```
