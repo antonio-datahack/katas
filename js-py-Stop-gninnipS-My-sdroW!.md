@@ -10,3 +10,13 @@ function spinWords(string){
     return arr.join(' ')
 }
 ```
+
+
+```py
+def spin_words(sentence):
+    return " ".join(["".join(reversed(list(st))) if len(st) > 4 else st for st in sentence.split(' ')])
+    
+
+def spin_words(sentence):
+    return " ".join([st[::-1] if len(st) > 4 else st for st in sentence.split(' ')])
+```
