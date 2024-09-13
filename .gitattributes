@@ -3,3 +3,7 @@
 
 # Exclude the 'notebooks' folder from language statistics
 notebooks/* linguist-vendored
+
+# Exclude HTML and CSS files from language statistics
+*.html linguist-vendored
+*.css linguist-vendored
